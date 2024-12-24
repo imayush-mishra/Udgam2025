@@ -1,0 +1,127 @@
+/* Root Container */
+.wagon-container {
+  width: 420px;
+  height: 240px;
+  position: relative;
+  margin: 7px;
+  border-radius: 24px 24px 0px 0px;
+  border: 2px solid var(--Udgam-Black, #222);
+  background: var(--Udgam-Black, #222);
+  overflow: hidden;
+  /* Ensures no overflow during animations */
+}
+
+/* Train Section */
+.wagon {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  height: 200px;
+  background: var(--Udgam-Blue, #0C79B8);
+}
+
+/* Image Section */
+.wagon-image {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  width: 147px;
+  height: 181px;
+  border-radius: 7.417px 7.417px 0px 0px;
+  border: 6px solid var(--Udgam-Black, #fdfafa);
+  background: var(--Udgam-White, #F4F5F6);
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+/* Content Section */
+.content {
+  position: absolute;
+  top: 18px;
+  left: 202px;
+  width: 184px;
+  height: 108px;
+  border-radius: 7.417px;
+  border: 6px solid var(--Udgam-Black, #faf4f4);
+  background: var(--Udgam-White, rgb(34, 34, 34));
+  z-index: 2;
+}
+
+.content-text {
+  margin: 4px;
+  padding: 8px;
+  color: var(--Udgam-Black, #f9f3f3);
+  text-align: left;
+  position: relative;
+  font-family: "PP Mori";
+  font-style: normal;
+  position: relative;
+  z-index: 2;
+}
+
+.content-text h1 {
+  
+  font-size: 22.25px;
+  
+  font-weight: 600;
+  line-height: 82%;
+  letter-spacing: -0.445px;
+ 
+}
+
+.content-text p {
+  font-size: 14.833px;
+  font-weight: 400;
+  line-height: 200%;
+  letter-spacing: -0.297px;
+
+}
+
+/* Fixed SVG positioning */
+.svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.svg-container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.svg-container svg:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 22px;
+}
+
+.svg-container svg:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 67px;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--Udgam-Black, #222);
+  position: absolute;
+  z-index: 1;
+}
+
+.line1 {
+  top: 76px;
+}
+
+.line2 {
+  top: 80px;
+}
+
+.line3 {
+  top: 96px;
+}
