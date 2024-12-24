@@ -8,7 +8,7 @@
   border: 2px solid var(--Udgam-Black, #222);
   background: var(--Udgam-Black, #222);
   overflow: hidden;
-  /* Ensures no overflow during animations */
+ 
 }
 
 /* Train Section */
