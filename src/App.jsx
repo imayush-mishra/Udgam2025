@@ -4,6 +4,9 @@ import Speakers from './pages/Speakers';
 import Start from './pages/Start';
 import TextBox from './component/text_box';
 import NavBar from './component/nav_bar';
+import FAQSection from './component/inquiry_desk';
+import LandingSponsors from './component/landing_sponsors';
+import LandingEvents from './component/landing_events.jsx';
 // Images
 import wagon1 from './assets/speaker1.jpg';
 import wagon2 from './assets/speaker2.jpg';
@@ -30,17 +33,15 @@ function App() {
       <TextBox title={"What is Udgam?"} />
       <div id="container"></div>
       <TextBox title={"Events Stations"} style={{ transform: 'rotate(180deg)' }} />
-      <div id="container"></div>  
+      <LandingEvents />
       <TextBox title={"Merch Stations"}/>
       <div id="container"></div>
       <TextBox title={"Speakers Express"} style={{ transform: 'rotate(180deg)' }} />
       <Speakers />
-      <div id="container"></div>
       <TextBox title={"Our Sponsors"}/>
-      <div id="container"></div>
+      <LandingSponsors />
       <TextBox title={"Inquiry Station"} style={{ transform: 'rotate(180deg)' }} />
-      <div id="container"></div>
-     
+      <FAQSection />
     </div>
   );
 }
