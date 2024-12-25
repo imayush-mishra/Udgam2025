@@ -3,6 +3,7 @@ import './App.css';
 import Speakers from './pages/Speakers';
 import Start from './pages/Start';
 import TextBox from './component/text_box';
+import NavBar from './component/nav_bar';
 // Images
 import wagon1 from './assets/speaker1.jpg';
 import wagon2 from './assets/speaker2.jpg';
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar />
       <Start />
       <TextBox title={"What is Udgam?"} />
       <div id="container"></div>
