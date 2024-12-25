@@ -1,7 +1,7 @@
 .text-box-container {
     display: flex;
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .stand-container {
@@ -32,17 +32,21 @@
     padding: 15px 30px;
     border-radius: 23.817px;
     background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-container {
     color: var(--Udgam-White, #F4F5F6);
     font-family: "TT Firs Neue Trl";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
+    font-size: 20px;
     text-transform: uppercase;
-    text-align: center;
+}
+
+.text-container h1 {
+    font-weight: 900;
+    font-style: normal;
 }
 
 @media (max-width: 768px) {
