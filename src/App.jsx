@@ -7,6 +7,7 @@ import NavBar from './component/nav_bar';
 import FAQSection from './component/inquiry_desk';
 import LandingSponsors from './component/landing_sponsors';
 import LandingEvents from './component/landing_events.jsx';
+import WhatIsUdgam from './component/whatisudgam';
 // Images
 import wagon1 from './assets/speaker1.jpg';
 import wagon2 from './assets/speaker2.jpg';
@@ -31,7 +32,7 @@ function App() {
       <NavBar />
       <Start />
       <TextBox title={"What is Udgam?"} />
-      <div id="container"></div>
+      <WhatIsUdgam />
       <TextBox title={"Events Stations"} style={{ transform: 'rotate(180deg)' }} />
       <LandingEvents />
       <TextBox title={"Merch Stations"}/>

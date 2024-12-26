@@ -14,7 +14,7 @@ const NavBar = () => {
         <div className="flex items-center">
           <img src={logo} alt="logo" className="w-4 h-11" />
         </div>
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex  items-center gap-8">
           <a href="#" className="text-white hover:text-blue-300 hover:scale-110 transform transition-all duration-300 ease-in-out text-xl">Home</a>
           <a href="events" className="text-white hover:text-blue-300 hover:scale-110 transform transition-all duration-300 ease-in-out text-xl">Events</a>
           <a href="schedule" className="text-white hover:text-blue-300 hover:scale-110 transform transition-all duration-300 ease-in-out text-xl">Schedule</a>
