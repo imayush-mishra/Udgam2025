@@ -27,7 +27,7 @@ function Start() {
   }, [])
 
   return (
-    <div className='videoContainer' style={{ position: 'relative', backgroundColor: 'rgba(0, 0, 0, 0.4)' }}>
+    <div className='videoContainer' style={{ position: 'relative', backgroundColor: 'rgba(0, 0, 0, 0.4)'}}>
       <video
         ref={videoRef}
         playbackRate={0.5}

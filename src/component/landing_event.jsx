@@ -2,7 +2,7 @@ import React from 'react';
 import event1 from '../assets/internFair.png';
 import event2 from '../assets/startupExpo.png';
 import event3 from '../assets/disrupt.png';
-import './lannding_evennts.css';
+import './landing_event.css';
 
 const events = [
     { name: 'INTERNFAIR', imageUrl: event1, description: 'Start-Up Expo 2025 is a premier event connecting startups, investors, VCs, incubators, and government leaders from across India. It’s the ultimate platform for networking, funding, and collaboration—don’t miss the chance to elevate your startup!' },
@@ -12,28 +12,22 @@ const events = [
 
 const LandingEvents = () => {
     return (
-        <div className="events-container">
+        <>
             <div className="events-list">
                 {events.map((event, index) => (
-                    <div
-                        key={index}
-                        className={`event-card ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
-                    >
-                        <div className="event-description">
-                            <div className="event-description-text">    
-                                <h1>What is {event.name} ?</h1>
-                                <p>{event.description}</p>
-                            </div>
+                    <div key={index} className="flex flex-col md:flex-row p-4 event-card m-4 rounded-lg shadow-lg">
+                        <div className="w-full md:w-1/2">
+                            <img src={event.imageUrl} alt={event.name} className="h-auto rounded-lg shadow-lg" />
                         </div>
-                        <div
-                            className="event-image ml-4 mr-8"
-                            style={{ backgroundImage: `url(${event.imageUrl})`, }}
-                        >
+                        <div className="event-description-text m-4">
+                            <h1 className="event-heading text-center p-4">What is {event.name}</h1>
+                            <p className="event-content">
+                                {event.description}
+                            </p>
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className="text-left mt-4">
+            </div><div className="text-left mt-4">
                 <div className="flex justify-center pb-4">
                     <a href="/sponsors" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 flex items-center">
                         View More
@@ -44,7 +38,7 @@ const LandingEvents = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

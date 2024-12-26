@@ -8,7 +8,7 @@ const WhatIsUdgam = () => {
             <div className="w-full md:w-1/2">
                 <video src={video} controls className="w-full h-auto rounded-lg shadow-lg" />
             </div>
-            <div className="w-full md:w-1/2 flex items-center p-6 bg-blue-200">
+            <div className="w-full md:w-1/2 flex items-center p-6 bg-blue-200 rounded-lg shadow-lg">
                 <p className="text-xl text-gray-800">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo eaque laboriosam deleniti reiciendis pariatur aliquam ex ut libero, iste excepturi voluptas vitae molestiae numquam nam perferendis in corrupti. Mollitia, sed!
                 </p>

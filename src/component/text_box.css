@@ -1,7 +1,6 @@
 .text-box-container {
     display: flex;
     align-items: center;
-    /* padding: 10px; */
 }
 
 .stand-container {
