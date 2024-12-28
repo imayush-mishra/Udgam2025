@@ -4,12 +4,12 @@ import Speakers from './pages/Speakers';
 import Start from './pages/Start';
 import TextBox from './component/text_box';
 import NavBar from './component/nav_bar';
-import Merch from './pages/Merch';
 import FAQSection from './component/inquiry_desk';
 import LandingSponsors from './component/landing_sponsors';
-import LandingEvents from './component/landing_event.jsx';
+import LandingEvents from './component/landing_event';
 import WhatIsUdgam from './component/whatisudgam';
 import Footer from './pages/footer';  
+import TShirtAdvert from './component/merch2';
 
 
 // Images
@@ -40,6 +40,7 @@ function App() {
       <TextBox title={"Events Stations"} style={{ transform: 'rotate(180deg)' }} />
       <LandingEvents />
       <TextBox title={"Merch Stations"}/>
+      <TShirtAdvert />
       {/* <Merch /> */}
       <TextBox title={"Speakers Express"} style={{ transform: 'rotate(180deg)' }} />
       <Speakers />
@@ -53,3 +54,4 @@ function App() {
 }
 
 export default App;
+
