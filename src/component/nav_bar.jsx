@@ -24,7 +24,8 @@ const NavBar = () => {
           <button className="text-black bg-white px-4 py-2 rounded-md hover:bg-blue-300 hover:scale-105 transform transition-all duration-300 ease-in-out text-xl">Buy Tickets</button>
         </div>
         <button className="md:hidden text-white" onClick={toggleMenu}>
-          {isMenuOpen ? 'Close' : 'Menu'}
+          {isMenuOpen ? 'Close' : '☰'}
+        
         </button>
       </nav>
       {isMenuOpen && (
