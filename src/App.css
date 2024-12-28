@@ -6,7 +6,7 @@
 body {
     overflow-x: hidden;
     overflow-y: auto; 
-    background-color: #eedfdf; /* Light background for better visibility */
+    background-color: #ffffff; /* Light background for better visibility */
 }
 #container {
     height: 200px;

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Logo from '../assets/udgam.png'
 import backgroundVideo from '../assets/video.webm'
-import '../pages/Start.css'
+import './hero.css'
 
 function Start() {
   const [isVisible, setIsVisible] = useState(false)
