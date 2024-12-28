@@ -15,7 +15,7 @@ const LandingEvents = () => {
         <>
             <div className="events-list">
                 {events.map((event, index) => (
-                    <div key={index} className="flex flex-col md:flex-row p-4 event-card m-4 rounded-lg shadow-lg">
+                    <div key={index} className="flex flex-col md:flex-row  event-card m-4 rounded-lg shadow-lg">
                         <div className="w-full md:w-1/2">
                             <img src={event.imageUrl} alt={event.name} className="h-auto rounded-lg shadow-lg" />
                         </div>
