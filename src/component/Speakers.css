@@ -8,22 +8,22 @@ body {
   width: 100vw;
 
 }
-  .train-container {
-    animation: slide1 20s linear infinite;
-    display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
-    position: relative;
-    width: 7680px;
+.train-container {
+  animation: slide1 25s linear infinite;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  position: relative;
+  width: 7680px;
+}
+
+/* Animations */
+@keyframes slide1 {
+  0% {
+    transform: translateX(100vw);
   }
-  
-  /* Animations */
-  @keyframes slide1 {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-3245px); 
-    }
+  100% {
+    transform: translateX(-3245px); 
   }
+}
   

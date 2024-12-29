@@ -15,9 +15,12 @@ const LandingEvents = () => {
         <>
             <div className="events-list">
                 {events.map((event, index) => (
-                    <div key={index} className="flex flex-col md:flex-row  event-card m-4 rounded-lg shadow-lg">
-                        <div className="w-full md:w-1/2">
+                    <div key={index} className="flex flex-col md:flex-row event-card m-4 rounded-lg shadow-lg border border-gray-300">
+                        <div className="w-full md:w-1/2 relative">
                             <img src={event.imageUrl} alt={event.name} className="h-auto rounded-lg shadow-lg" />
+                            <a href="/" className="register-button absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 bg-black bg-opacity-50 text-white py-2 px-4 rounded">
+                                Register Now
+                            </a>
                         </div>
                         <div className="event-description-text m-4">
                             <h1 className="event-heading text-center p-4">What is {event.name}</h1>
@@ -27,7 +30,8 @@ const LandingEvents = () => {
                         </div>
                     </div>
                 ))}
-            </div><div className="text-left mt-4">
+            </div>
+            <div className="text-left mt-4">
                 <div className="flex justify-center pb-4">
                     <a href="/sponsors" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 flex items-center">
                         View More

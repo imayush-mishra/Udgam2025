@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Element } from 'react-scroll';
 import Speakers from '../component/Speakers';
 import Start from '../component/hero';
 import TextBox from '../component/text_box';
@@ -26,6 +27,15 @@ function Home() {
     { imageUrl: wagon3, title: 'Speaker 3', subtitle: 'Panelist' },
     { imageUrl: wagon4, title: 'Speaker 4', subtitle: 'Panelist' },
     { imageUrl: wagon5, title: 'Speaker 5', subtitle: 'Panelist' },
+  ];
+
+  const sections = [
+    "What is Udgam?",
+    "Events Stations",
+    "Merch Stations",
+    "Speakers Express",
+    "Our Sponsors",
+    "Inquiry Station"
   ];
 
   // const textBoxTitle = 'Speakers';

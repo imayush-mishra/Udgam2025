@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
+import TeamCards from './TeamCard';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const NavBar = () => {
           <img src={logo} alt="logo" className="w-4 h-11" />
         </div>
         <div className="hidden md:flex  items-center gap-8">
-          <a href="#" className="text-white hover:text-blue-300 hover:scale-110 transform transition-all duration-300 ease-in-out text-xl">Home</a>
+          <a href="/" className="text-white hover:text-blue-300 hover:scale-110 transform transition-all duration-300 ease-in-out text-xl">Home</a>
           <a href="events" className="text-white hover:text-blue-300 hover:scale-110 transform transition-all duration-300 ease-in-out text-xl">Events</a>
           <a href="schedule" className="text-white hover:text-blue-300 hover:scale-110 transform transition-all duration-300 ease-in-out text-xl">Schedule</a>
           <a href="sponsors" className="text-white hover:text-blue-300 hover:scale-110 transform transition-all duration-300 ease-in-out text-xl">Sponsors</a>
@@ -30,7 +31,7 @@ const NavBar = () => {
       </nav>
       {isMenuOpen && (
         <div className="md:hidden flex flex-col items-center bg-blue-500 p-10">
-          <a href="#" className="text-white py-2 text-xl">Home</a>
+          <a href="/" className="text-white py-2 text-xl">Home</a>
           <a href="events" className="text-white py-2 text-xl">Events</a>
           <a href="schedule" className="text-white py-2 text-xl">Schedule</a>
           <a href="sponsors" className="text-white py-2 text-xl">Sponsors</a>

@@ -2,14 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
-// Import the image for mobile fallback
-import image from '../assets/merch.png'; // Ensure the path is correct
+import image from '../assets/merch.png'; 
 
-const MODEL_URL = "./tshirt.glb"; // Ensure this file is in the `public` folder
-
+const MODEL_URL = "./tshirt2.glb"; 
 const TShirtModel = () => {
   const { scene } = useGLTF(MODEL_URL);
-  return <primitive object={scene} scale={6} />;
+  return <primitive object={scene} scale={9} />;
 };
 
 const TShirtAdvert = () => {
@@ -26,7 +24,7 @@ const TShirtAdvert = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center border-2 border-blue-500 rounded-lg shadow-lg mx-auto mt-8 max-w-6xl">
+    <div className="flex flex-col md:flex-row items-center border-2 border-blue-500 rounded-lg shadow-lg mx-auto mt-4 max-w-6xl bg-red-200">
       {/* 3D Model Section */}
       <div className="flex-1 flex justify-center items-center border-b-2 md:border-b-0 md:border-r-2 border-gray-300">
         {isMobile ? (
@@ -37,7 +35,7 @@ const TShirtAdvert = () => {
           </div>
         ) : (
           <div
-            className="w-full h-[30vh] sm:h-[60vh] md:h-[80vh] lg:h-[100vh]"
+            className="w-full h-[20vh] sm:h-[20vh] md:h-[20vh] lg:h-[80vh] bg-blue-200"
             style={{ minHeight: "300px" }} // Ensures visibility on very small screens
           >
             <Canvas
@@ -69,14 +67,17 @@ const TShirtAdvert = () => {
 
       {/* Text and Button Section */}
       <div className="flex-1 p-4 flex flex-col justify-center items-center text-center">
-        <h2 className="text-3xl font-extrabold text-gray-800 mb-4">I WANT IT!</h2>
-        <button
-          className="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition-all"
-          onClick={() => alert("Redirecting to purchase page!")}
-        >
-          BUY NOW ➡
-        </button>
-      </div>
+  <h2 className="text-3xl font-extrabold text-gray-800 mb-4 transform ">
+    I WANT IT!
+  </h2>
+  <button
+    className="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg transform  hover:bg-blue-600 transition-all"
+    onClick={() => alert("Redirecting to purchase page!")}
+  >
+    BUY NOW ➡
+  </button>
+</div>
+
     </div>
   );
 };
