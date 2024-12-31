@@ -4,6 +4,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background-color: #00000094;
 }
 
 .background-video {
@@ -14,7 +15,8 @@
     z-index: -1;
     top: 0;
     left: 0;
-    opacity: 0.8; /* Reduced opacity for a darker look */
+    opacity: 0.9;
+    background-color: #00000094;
 }
 
 .logo-container {

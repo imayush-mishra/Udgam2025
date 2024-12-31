@@ -30,16 +30,19 @@ const LandingEvents = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className="text-left mt-4">
-                <div className="flex justify-center pb-4">
-                    <a href="/sponsors" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 flex items-center">
+                <div className="events-svg flex justify-end items-center pb-4 pr-16">
+                    <a href="/events" className="flex items-center hover:underline group">
                         View More
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <circle cx="12" cy="12" r="12" fill="blue-800" />
-                            <path d="M19.4503 13.0523V10.9849L13.4157 5.05859L10.4657 5.05859L16.4455 10.9849H4.57031V13.0523H16.4857L10.506 18.9786H13.4561L19.4503 13.0523Z" fill="white" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className=" ml-1 transform transition-transform group-hover:translate-x-2">
+                            <circle cx="12" cy="12" r="12" fill="#E4013E" />
+                            <path d="M19.4484 13.0523V10.9849L13.4137 5.05859L10.4638 5.05859L16.4435 10.9849H4.56836V13.0523H16.4837L10.504 18.9786H13.4542L19.4484 13.0523Z" fill="white" />
                         </svg>
                     </a>
+                </div>
+            </div>
+            <div className="text-left mt-4">
+                <div className="flex justify-end pb-4 pr-16">
+
                 </div>
             </div>
         </>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import TeamCards from './TeamCard';
+import './nav_bar.css';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const NavBar = () => {
 
   return (
     <div className="main w-full">
-      <nav className="flex justify-between items-center pl-4 p-2 bg-blue-500">
+      <nav className=" nav_bar flex justify-between items-center">
         <div className="flex items-center">
           <img src={logo} alt="logo" className="w-4 h-11" />
         </div>
@@ -30,7 +31,7 @@ const NavBar = () => {
         </button>
       </nav>
       {isMenuOpen && (
-        <div className="md:hidden flex flex-col items-center bg-blue-500 p-10">
+        <div className=" mobile_nav_bar md:hidden flex flex-col items-center p-10">
           <a href="/" className="text-white py-2 text-xl">Home</a>
           <a href="events" className="text-white py-2 text-xl">Events</a>
           <a href="schedule" className="text-white py-2 text-xl">Schedule</a>
