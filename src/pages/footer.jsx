@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./footer.css";
 import UdgamLogo from "../assets/udgam.svg"; 
 import ECellLogo from "../assets/ecell.svg"; 
 import Instagram from "../assets/instagram.svg";
