@@ -1,0 +1,106 @@
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #0077b6;
+  color: #ffffff;
+  padding: 40px;
+  position: relative;
+}
+
+.footer-section {
+  margin: 30px;
+}
+
+.description {
+  color: var(--Udgam-White, #F4F5F6);
+  font-family: "PP Mori";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.footer-section h1 {
+  color: var(--Udgam-White, #F4F5F6);
+  font-family: "TT Firs Neue Trl";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  color: var(--Udgam-White, #F4F5F6);
+  font-family: "PP Mori";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+.glow-on-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 14px;
+  color: #d1d1d1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-section {
+    margin: 20px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .footer-section h1 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+  
+
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,9 @@
+.nav_bar{
+    background-color: #0C79B8;
+    height: 80px;
+    padding: 17px 17px 16px 44px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
+}
+mobile_nav_bar{
+    background-color: #0C79B8;
+}
