@@ -1,0 +1,95 @@
+.text-box-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stand-container {
+    min-width: 80px;
+}
+
+.text-box-container img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.big-container {
+    width: auto;
+    min-height: 116px;
+    display: flex;
+    padding: 12px 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35.725px;
+    border: 1.985px solid #222;
+    background: #225088;
+}
+
+.small-container {
+    min-height: 92px;
+    padding: 15px 30px;
+    border-radius: 23.817px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container h1 {
+    color: var(--Udgam-White, #F4F5F6);
+    font-family: "TT Firs Neue Trl";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .text-container h1 {
+        font-size: 40px;
+    }
+    .big-container {
+        padding: 10px 8px;
+        border-radius: 30px;
+    }
+    .small-container {
+        padding: 12px 25px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-container h1 {
+        font-size: 32px;
+    }
+    .text-box-container img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .big-container {
+        width: 100%;
+        padding: 8px 5px;
+        border-radius: 20px;
+    }
+    .small-container {
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container h1 {
+        font-size: 24px;
+    }
+    .big-container {
+        width: 100%;
+        padding: 6px 4px;
+        border-radius: 15px;
+    }
+    .small-container {
+        padding: 8px 15px;
+        border-radius: 10px;
+    }
+}

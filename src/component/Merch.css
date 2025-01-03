@@ -1,0 +1,111 @@
+.merch-station-wrapper h2{
+  /* I WANT IT! */
+
+position: absolute;
+width: 233px;
+height: 34px;
+left: 1027px;
+top: 2600px;
+
+font-family: 'PP Mori';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 50px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+
+color: #343434;
+
+
+}
+
+.Buy{
+/* Group 35357 */
+
+position: absolute;
+width: 300px;
+height: 88.3px;
+left: 978px;
+top: 2800px;
+/* Rectangle 5333 */
+
+
+/* Rectangle 5333 */
+border: 2px solid white;
+
+/* Udgam Blue */
+border-radius: 12.7273px;
+
+cursor: pointer;
+}
+
+.Buy a{
+/* BUY NOW */
+
+position: absolute;
+left: 8.93%;
+right: 29.64%;
+top: 35.11%;
+bottom: 36.58%;
+
+font-family: 'PP Mori';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+
+text-transform: capitalize;
+
+/* Udgam White */
+color: white;
+text-decoration: none;
+z-index: 1;
+transition: color 0.3s ease;
+}
+
+.Buy::before {
+  content: '';
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0077cc;
+    
+    transition: left 0.3s ease;
+    border-radius: 12.7273px;
+    transition: width 0.5s ease;
+    z-index: 0;
+}
+
+.Buy:hover::before {
+  width: 100%
+}
+
+.Buy:hover a {
+  color: white;
+}
+
+.Buy:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.photos{
+  /* Isolated_black_t-shirt_front 2 */
+
+position: absolute;
+width: 650.08px;
+height: 556.93px;
+left: 80px;
+top: 2500px;
+
+}
+
+
