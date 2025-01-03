@@ -18,7 +18,7 @@ function Start() {
       if (videoRef.current) {
         videoRef.current.play()
       }
-    }, 2000) // Match with the duration of the logo animation
+    }, 3000) // Match with the duration of the logo animation
 
     return () => {
       clearTimeout(animationTimer)
@@ -27,14 +27,12 @@ function Start() {
   }, [])
 
   return (
-    <div className='videoContainer' style={{ position: 'relative', backgroundColor: 'rgba(0, 0, 0, 0.4)'}}>
+    <div className='videoContainer' style={{ position: 'relative', backgroundColor: 'rgba(0, 0, 0, 0.5)'}}>
       <video
         ref={videoRef}
         playbackRate={0.5}
         muted
         className="background-video"
-        loop
-        onEnded={() => setTimeout(() => videoRef.current.play(), 4000)} // Delay before replaying
       >
         <source src={backgroundVideo} type="video/webm" />
       </video>

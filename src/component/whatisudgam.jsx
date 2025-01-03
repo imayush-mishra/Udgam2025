@@ -10,7 +10,7 @@ const WhatIsUdgam = () => {
             </div>
             <div className="w-full md:w-1/2 flex flex-col justify-end items-start p-6  rounded-lg shadow-lg">
                 <p className="text-xl text-gray-800">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo eaque laboriosam deleniti reiciendis pariatur aliquam ex ut libero, iste excepturi voluptas vitae molestiae numquam nam perferendis in corrupti. Mollitia, sed!
+                UDGAM is the flagship event of the E-Cell, IIT Guwahati. It was conceptualized to develop and spread the spirit of entrepreneurship among the youth of the North-East, and India in general thus earning itself the reputation of being the largest E-Summit in the north-east. UDGAM acts as an exclusive platform for entrepreneurs, startup enthusiasts, and product managers to meet, discuss, explore, share, debate, and have fun, while celebrating the idea of entrepreneurship and innovation.
                 </p>
                 <h1 style={{ color: 'var(--Udgam-Black, #222)', fontFamily: 'PP Mori', fontSize: '40px', fontStyle: 'normal', fontWeight: 600, lineHeight: 'normal', textTransform: 'capitalize' }}>What is Udgam?</h1>
             </div>

@@ -9,7 +9,7 @@ body {
 
 }
 .train-container {
-  animation: slide1 25s linear infinite;
+  animation: slide1 35s linear infinite;
   display: flex;
   flex-direction: row;
   overflow-x: hidden;

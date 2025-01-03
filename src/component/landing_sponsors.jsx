@@ -40,7 +40,7 @@ const LandingSponsors = () => {
       ))}
     </div>
       <div className="events-svg flex justify-end items-center pb-4 pr-36">
-      <a href="/events" className="flex items-center hover:underline group">
+      <a href="/sponsors" className="flex items-center hover:underline group">
           View More
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className=" ml-1 transform transition-transform group-hover:translate-x-2">
               <circle cx="12" cy="12" r="12" fill="#E4013E" />
